@@ -1,38 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: arial;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #0b121e;
+  background-size: cover;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+}
+
+.navbar {
+  position: absolute;
+  top: 3%;
+  bottom: 3%;
+  left: 2%;
+  width: 7%;
+  border-radius: 10px;
+  text-align: center;
+  background: #1f2b3b;
+  justify-content: center;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.search_input {
+  position: absolute;
+  top: 3%;
+  left: 11%;
+  width: 50%;
+  height: 25px;
+  border-radius: 10px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #1f2b3b;
+  color: #c6cfd8;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.search_input::placeholder {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar_logo {
+  text-align: center;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar_logo img {
+  margin-top: 20px;
+  height: 70%;
+  width: 70%;
+}
+
+.navbar_item_container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.item_div_container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.item_div_container img {
+  height: 30%;
+  width: 30%;
+}
+
+.navbar_item_container a {
+  position: relative;
+  color: #c6cfd8;
+  font-size: 12px;
+  font-weight: bold;
+  display: table;
+  width: 100%;
+}
+
+.temp_container {
+  position: absolute;
+  top: 12%;
+  left: 11%;
+  width: 50%;
+  height: 27%;
+  border-radius: 10px;
+}
+.city_name {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  left: 5%;
+  top: 5%;
+}
+.temp {
+  position: absolute;
+  font-weight: bold;
+  left: 5%;
+  bottom: 4%;
+}
+.temp_numeric {
+  font-size: 50px;
+  position: relative;
+}
+.temp_symblol {
+  font-size: 50px;
+  position: relative;
+}
+.temp_container img {
+  position: absolute;
+  vertical-align: middle;
+  height: 100%;
+  right: 10%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.info_container {
+  position: absolute;
+  top: 41%;
+  left: 11%;
+  width: 50%;
+  height: 56%;
+  font-weight: bold;
+  border-radius: 10px;
+  background: #1f2b3b;
+}
+
+.weather_info_heading {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  color: #858b99;
+}
+
+.info_container td {
+  padding: 25px;
+}
+
+.weather_info_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.weather_info_container_image{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather_info_container_data{
+  width: 80%;
+  height: 100%;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.weather_info_container img {
+  width: 20px;
+  height: 20px;
+}
+
+.info_heading {
+  font-size: 12px;
+  color: #858b99;
+}
+.info_value {
+  font-size: 16px;
+  color: #c6cfd8;
+}
+
+.info_container table {
+  border-collapse: collapse;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  height: 90%;
+}
+
+.other_cities_container {
+  position: absolute;
+  top: 12%;
+  left: 63%;
+  width: 35%;
+  height: 85%;
+  border-radius: 10px;
+}
+
+.other_cities_container table {
+  border-collapse: collapse;
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.other_cities_container td {
+  padding: 20px;
+  width: 50%;
+}
+
+.city_container {
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #1f2b3b;
+}
+.city_container_city_name {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.city_container img{
+  padding-top: 15px;
+  width: 80px;
+  height: 70px;
+}
+.city_container_city_temp {
+  padding-top: 15px;
+  font-size: 25px;
+  font-weight: bold;
 }
